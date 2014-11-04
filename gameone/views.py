@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.http.response import HttpResponse
 
 # Create your views here.
 
 def roundone(request):
-    HttpResponse('Yeah you got it.')
+    return render_to_response('gameone/roundone.html')
